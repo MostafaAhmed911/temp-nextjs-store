@@ -3,17 +3,11 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 import { LuAlignLeft } from "react-icons/lu";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { links } from "@/utils/links";
-import Usericon from "./Usericon";
-import { SignedIn, SignedOut, SignInButton, SignUpButton } from "@clerk/nextjs";
-import SignOutLink from "./SignOutLink";
-import { auth } from "@clerk/nextjs/server";
-
+import { links } from "@/utils/Links";
 function LinksDropdown() {
   const userId: any = auth();
   const isAdmin = userId === process.env.ADMIN_USER_ID;

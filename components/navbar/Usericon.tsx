@@ -1,9 +1,7 @@
-import { currentUser, auth } from "@clerk/nextjs/server";
-import React from "react";
-import { LuUser2 } from "react-icons/lu";
+import { LuUser } from "react-icons/lu";
+import { currentUser } from "@clerk/nextjs/server";
 
-async function Usericon() {
-  // const { userId } = auth();
+async function UserIcon() {
   const user = await currentUser();
 
   const profileImage = user?.imageUrl;
@@ -12,12 +10,12 @@ async function Usericon() {
     return (
       <img
         src={profileImage}
-        alt="user icon"
+        alt="profile image"
         className="w-6 h-6 rounded-full object-cover"
       />
     );
   }
-  return <LuUser2 className="w-6 h-6 bg-primary rounded-full text-white" />;
-}
 
-export default Usericon;
+  return <LuUser className="w-6 h-6 bg-primary rounded-full text-white" />;
+}
+export default UserIcon;

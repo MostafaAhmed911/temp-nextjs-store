@@ -1,5 +1,6 @@
 import React from "react";
 import { Skeleton } from "../ui/skeleton";
+
 function LoadingTable({ rows = 5 }: { rows?: number }) {
   const tableRows = Array.from({ length: rows }, (_, index) => {
     return (

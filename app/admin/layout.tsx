@@ -10,7 +10,7 @@ function DashboardLayout({ children }: { children: React.ReactNode }) {
         <div className="lg:col-span-2">
           <Sidebar />
         </div>
-        <div className="lg:col-span-10 px-4">{children}</div>
+        <div className="lg:col-span-10 px-1">{children}</div>
       </section>
     </>
   );

@@ -11,10 +11,7 @@ function Hero() {
           We are changing the way people shop
         </h1>
         <p className="mt-8 max-w-xl text-lg leading-8 text-muted-foreground">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          adipisci maiores voluptates saepe perferendis itaque! Possimus eius
-          iste consequatur quam sit natus sed consectetur, quidem, pariatur
-          perferendis ipsam porro sapiente?
+Explore a wide selection of stylish and durable furniture for every room in your home. We offer quality pieces at competitive prices, designed to elevate your living space. Enjoy exceptional craftsmanship and customer service with every purchase. Transform your home with us!
         </p>
         <Button asChild size="lg" className="mt-20">
           <Link href="/products">Our Products</Link>
